@@ -1,0 +1,27 @@
+{
+  "name": "task-management-api",
+  "version": "1.0.0",
+  "description": "A Task Management API built with NodeJS, Express, MongoDB and TypeScript",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --watch 'lib/**/*.ts' --exec 'ts-node' ./lib/server.ts",
+    "start": "nodemon ./dist/server.js",
+    "prod": "npm run build && npm run start"
+  },
+  "author": "Prateek Kumar Singh <dev.prateek@outlook.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.15",
+    "nodemon": "^1.18.7",
+    "prettier": "^1.14.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.3"
+  }
+}
